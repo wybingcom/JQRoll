@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      content="JQRoll,wybing,全屏图片滚动插件,移动端图片滚动插件,朝夕光年官网"
+      name="keywords"
+    />
+    <meta
+      content="JQRoll是作者Wybing仿照朝夕光年官网开发出来的一款移动端、PC端全屏图片滚动插件"
+      name="description"
+    />
+    <title>JQRoll-移动端</title>
+    <link rel="stylesheet" href="./css/game.css" />
+    <script src="./js/game.js"></script>
+    <script src="./js/jquery-min.js"></script>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+
+  <script>
+    $(document).ready(function () {
+      $("#main").jqroll({
+        /*
+            Author:wybing
+            date:2022-12-20
+
+            【使用方法】
+            1.插入<div id="main"></div>
+            2.完成如下数据配置
+            game_data: [
+            {
+              name:'',  // 标题文字
+              isHot:false, // 是否加Hot图标
+              icon:'', // 图标、logo
+              small_bg:,  // 小图
+              big_bg:,  // 大图
+              desc:,  // 标题描述
+              url:,   // 跳转地址
+              date:,  // 右侧日期
+            },
+          */
+
+        game_data: [
+          {
+            name: "这是一个Demo",
+            "isHot": true,
+            icon: "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_10_29_16_25_14/265095412910_s176746.png",
+            small_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_08_13_14_29_37/628808023217_s62936.jpeg",
+            desc: "这是一个Demo，托管于vercel",
+            big_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_08_16_12_01_17/1097311130271_s596689.jpg",
+            url: " https://www.cnblogs.com/wybing",
+            date: "01/01",
+          },
+          {
+            name: "武林闲侠",
+            "isHot": true,
+            icon: "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_11_17_22_07_33/556343383952_s30189.png",
+            small_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_11_17_22_05_01/1486819930198_s115346.png",
+            desc: "《武林闲侠》是由金山世游研发、朝夕光年发行的国风武侠卡牌手游。写意国风，唯美江湖，再创武侠新玩法！百部武学秘籍一点速成，大侠养成全靠挂机，智能战斗解放双手，角色重置资源100%返还，武侠游戏其实不用那么肝！侠路相逢，闲者胜，在《武林闲侠》，轻松一点！",
+            big_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_11_17_18_08_22/149381868048_s589756.jpg",
+            url: " https://www.cnblogs.com/wybing",
+            date: "01/02",
+          },
+          {
+            name: "航海王热血航线",
+            "isHot": true,
+            icon: "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_04_11_16_45_46/950033980911_s6386.png",
+            small_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_04_11_16_48_46/1034034083258_s55299.png",
+            desc: "《航海王热血航线》是一款由中手游与朝夕光年联合出品的全新正版航海王3D格斗手游。通过原著还原的角色剧情及场景、可自由探索的大海域世界、公平无数值的3D-PVP格斗，为玩家打造沉浸式的热血航海世界！",
+            big_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_04_12_18_26_48/667534022595_s388539.jpeg",
+            url: " https://www.cnblogs.com/wybing",
+            date: "01/03",
+          },
+          {
+            name: "MARVEL SNAP",
+            "isHot": false,
+            icon: "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2022_10_26_11_09_39/492245025826_s1069673.png",
+            small_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2022_10_26_11_11_21/604985644371_s83821.jpg",
+            desc: "MARVEL SNAP是一款面向手游一代人的全新策略性游戏。这款游戏将漫威的多元宇宙变成一个快节奏、令人肾上腺素激增的战略性卡牌对战游戏。你可以从海量的漫威英雄及反派中集结你的梦之队，收集数不清的风格化卡背，并在短短三分钟内体验一局超能力战斗。",
+            big_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2022_10_26_11_11_39/374424538841_s876541.jpg",
+            url: " https://www.cnblogs.com/wybing",
+            date: "01/04",
+          },
+          {
+            name: "代号：Spark",
+            "isHot": false,
+            icon: "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2022_03_24_18_26_28/1301496662255.PNG",
+            small_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2022_03_24_18_27_11/215283148645.JPEG",
+            desc: "守护火种，延续文明！《代号：Spark》是由炎龙游戏研发、朝夕光年发行的一款大单局无限制生存竞技手游，游戏现已开启全渠道预约。玩家需要采集资源、建造领地、制造武器并持续探索地图，收集生存下去的希望——火种。",
+            big_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2022_03_24_18_28_01/1483509480716_s635238.jpg",
+            url: " https://www.cnblogs.com/wybing",
+            date: "01/05",
+          },
+          {
+            name: "热血街篮",
+            "isHot": false,
+            icon: "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_02_01_17_04_26/460264920466.png",
+            small_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_02_05_18_09_27/947431901934.png",
+            desc: "《热血街篮》是朝夕光年代理发行的自由竞技街篮手游，主打3V3竞技和赛事玩法。次世代3D卡通画风，真实的动作捕捉打造开放的街篮世界。时装搭配，技能组合，训练养成，自由连招，秀出你的专属Style！",
+            big_bg:
+              "https://lf3-fe-tos.dailygn.com/obj/g-marketing-act-assets/2021_02_05_18_09_09/406872337810.png",
+            url: " https://www.cnblogs.com/wybing",
+            date: "01/06",
+          },
+        ],
+      });
+    });
+  </script>
+</html>
