@@ -115,7 +115,7 @@ a, div {
 
 .stage1 .bg_list .old_bg .mask {
     position: absolute;
-    width: 7.5rem;
+    width: 100vw;
     height: 16.5rem;
     top: 0;
     left: 0;
