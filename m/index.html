@@ -9,10 +9,11 @@
   <meta content="JQRoll,wybing,全屏图片滚动插件,移动端图片滚动插件,朝夕光年官网" name="keywords" />
   <meta content="JQRoll是作者Wybing仿照朝夕光年官网开发出来的一款移动端、PC端全屏图片滚动插件" name="description" />
   <title>JQRoll-移动端</title>
-  <link rel="stylesheet" href="/m/css/game.css" />
-  <script src="/m/js/game.js"></script>
-  <script src="/m/js/jquery.min.js"></script>
   <script>
+    window.onload = function () {
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("main").style.display = "block";
+    }
     //监听浏览器,针对不同分辨率计算font-size
     (function (doc, win) {
       var docEl = doc.documentElement,
@@ -34,7 +35,7 @@
         ))) {
         isMobile = true;
       }
-      if ($(window).width() < 960) {
+      if (window.innerWidth < 960) {
         isMobile = true;
       }
       return isMobile
@@ -44,9 +45,17 @@
       window.location.href = '/';
     }
   </script>
+
+  <link id="favicon" rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/m/css/game.css" />
+  <!-- <script src="/m/js/game.js"></script> -->
+  <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+  <script src="/m/js/jquery.min.js"></script>
+
 </head>
 
 <body>
+  <div id="loading"></div>
   <div id="main"></div>
 </body>
 
