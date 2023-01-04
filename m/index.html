@@ -10,10 +10,6 @@
   <meta content="JQRoll是作者Wybing仿照朝夕光年官网开发出来的一款移动端、PC端全屏图片滚动插件" name="description" />
   <title>JQRoll-移动端</title>
   <script>
-    window.onload = function () {
-      document.getElementById("loading").style.display = "none";
-      document.getElementById("main").style.display = "block";
-    }
     //监听浏览器,针对不同分辨率计算font-size
     (function (doc, win) {
       var docEl = doc.documentElement,
@@ -38,7 +34,7 @@
       if (window.innerWidth < 960) {
         isMobile = true;
       }
-      return isMobile
+      return isMobile;
     }
 
     if (!hasMobile()) {
@@ -145,6 +141,35 @@
       ],
     });
   });
+
+  window.onload = function () {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("loading").remove();
+    document.getElementById("main").style.display = "block";
+    console.log($('.card_list .card[data-id="19"]').offset().left);
+    let PAGESIZE = {
+      width: 750,
+      height: 1650
+    };
+    var t = PAGESIZE.width,
+      w = (PAGESIZE.height, $(window).width());
+    var e = w / t;
+    var a = $(".card_list .card[data-id=" + (aabbabagbab + 1) + "]").offset().left,
+      s = $(".card_list .card[data-id=" + (aabbabagbab + 1) + "]").offset().top,
+      i = document.createElement("style");
+    i.type = "text/css";
+    try {
+      i.appendChild(document.createTextNode(".stage1 .old_bg{clip: rect(" + s + "px," + (a + 188 * e) + "px," + (s +
+          280 * e) + "px," + a +
+        "px); -webkit-transform: scale(1); opacity: 0; -webkit-transition: clip 1s, -webkit-transform 1s, opacity 1s; }"
+      ))
+    } catch (t) {
+      i.styleSheet.cssText = ".stage1 .old_bg{clip: rect(" + s + "px," + (a + 188 * e) + "px," + (s + 280 * e) +
+        "px," + a +
+        "px); -webkit-transform: scale(1); opacity: 0; -webkit-transition: clip 1s, -webkit-transform 1s, opacity 1s; }"
+    }
+    document.getElementsByTagName("head")[0].appendChild(i);
+  }
 </script>
 
 </html>
