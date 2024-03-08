@@ -227,8 +227,8 @@
     var t = PAGESIZE.width,
       w = (PAGESIZE.height, $(window).width());
     var e = w / t;
-    var a = $(".card_list .card[data-id=" + (aabbabagbab + 1) + "]").offset().left,
-      s = $(".card_list .card[data-id=" + (aabbabagbab + 1) + "]").offset().top,
+    var a = $(".card_list .card[data-id=" + (Math.floor(aabbabagbab) + 1) + "]").offset().left,
+      s = $(".card_list .card[data-id=" + (Math.floor(aabbabagbab) + 1) + "]").offset().top,
       i = document.createElement("style");
     i.type = "text/css";
     try {
